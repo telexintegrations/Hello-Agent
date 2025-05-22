@@ -2,12 +2,13 @@
   "name": "HelloAgent",
   "description": "An agent that greets users.",
   "url": "https://hello-agent.onrender.com/",
+  "version": "1.0.0",
   "capabilities": {
     "streaming": false,
     "pushNotifications": false
   },
-  "defaultInputModes": ["text"],
-  "defaultOutputModes": ["text"],
+  "defaultInputModes": ["application/json"],
+  "defaultOutputModes": ["application/json"],
   "skills": [
     {
       "id": "greet",
