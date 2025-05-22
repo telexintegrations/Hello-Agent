@@ -1,20 +1,23 @@
 import express from 'express';
 import path from 'path';
 import fs from 'fs';
+import cors from 'cors';
 
 const app = express();
 const port = 3000;
 
+app.use(cors())
+
 app.use(express.json());
 
-// Serve agent.json
+
 app.get('/.well-known/agent.json', (req, res) => {
   const agentCardPath = path.join(__dirname, 'agent.json');
   const agentCard = JSON.parse(fs.readFileSync(agentCardPath, 'utf-8'));
   res.json(agentCard);
 });
 
-// Handle task requests
+
 app.post('/task', (req, res) => {
   const { skill_id, input } = req.body;
 

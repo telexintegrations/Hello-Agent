@@ -1,7 +1,7 @@
 {
   "name": "HelloAgent",
   "description": "An agent that greets users.",
-  "url": "http://localhost:3000",
+  "url": "https://hello-agent.onrender.com/",
   "capabilities": {
     "streaming": false,
     "pushNotifications": false
