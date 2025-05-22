@@ -11,7 +11,7 @@ app.use(cors())
 app.use(express.json());
 
 
-app.get('/.well-known/agent.json', (req, res) => {
+app.get('/well-known/agent.json', (req, res) => {
   const agentCardPath = path.join(__dirname, 'agent.json');
   const agentCard = JSON.parse(fs.readFileSync(agentCardPath, 'utf-8'));
   res.json(agentCard);
