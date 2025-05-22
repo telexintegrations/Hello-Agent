@@ -1,7 +1,7 @@
 {
   "name": "HelloAgent",
   "description": "An agent that greets users.",
-  "url": "https://hello-agent.onrender.com/",
+  "url": "",
   "version": "1.0.0",
   "capabilities": {
     "streaming": false,
