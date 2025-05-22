@@ -3,6 +3,10 @@ import path from 'path';
 import fs from 'fs';
 import cors from 'cors';
 
+
+const agentJsonPath = path.join(__dirname, 'agent.json');
+const agentJson = JSON.parse(fs.readFileSync(agentJsonPath, 'utf-8'));
+
 const app = express();
 const port = 3000;
 
@@ -10,13 +14,10 @@ app.use(cors())
 
 app.use(express.json());
 
-
-app.get('/.well-known/agent.json', (req, res) => {
-  const agentCardPath = path.join(__dirname, 'agent.json');
-  const agentCard = JSON.parse(fs.readFileSync(agentCardPath, 'utf-8'));
+app.get('/integration', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.json(agentCard);
+  res.json(agentJson);
 });
 
 
