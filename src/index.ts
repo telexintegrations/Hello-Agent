@@ -14,7 +14,7 @@ app.use(cors())
 
 app.use(express.json());
 
-app.get('/integration', (req, res) => {
+app.get('/.well-known/agent.json', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.json(agentJson);
