@@ -7,7 +7,7 @@
     "url": "https://telex.im"
   },
   "version": "1.0.0",
-  "defaultInputModes": [
+   "defaultInputModes": [
         "application/json"
     ],
     "defaultOutputModes": [
@@ -20,8 +20,8 @@
   "skills": [
     {
       "id": "greetSkill",
-      "name": "Greeting Skill",
-      "description": "Responds with a friendly greeting."
+      "name": "Greeting Skil",
+      "description": "Responds with a friendly greeting.",
     }
   ]
 }
