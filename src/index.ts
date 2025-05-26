@@ -2,10 +2,10 @@ import express, { Request, Response} from 'express';
 import path from 'path';
 import fs from 'fs';
 import cors from 'cors';
+import agentCard from './agent.json';
 
 
-const agentJsonPath = path.join(__dirname, 'agent.json');
-const agentJson = JSON.parse(fs.readFileSync(agentJsonPath, 'utf-8'));
+
 
 const app = express();
 const port = 3000;
@@ -15,7 +15,7 @@ app.use(cors())
 app.use(express.json());
 
 app.get('/.well-known/agent.json', (req, res) => {
-  res.json(agentJson);
+  res.json(agentCard);
 });
 
 
