@@ -15,7 +15,7 @@ app.use(cors())
 app.use(express.json());
 
 app.get('/.well-known/agent.json', (req, res) => {
-  res.json(agentCard);
+  res.send(agentCard);
 });
 
 
