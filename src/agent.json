@@ -1,7 +1,11 @@
 {
   "name": "HelloAgent",
   "description": "An agent that greets users.",
-  "url": "",
+  "url": "https://hello-agent.onrender.com/task",
+  "provider": {
+    "organization": "Telex",
+    "url": "https://telex.im"
+  },
   "version": "1.0.0",
   "capabilities": {
     "streaming": false,
@@ -11,7 +15,7 @@
   "defaultOutputModes": ["application/json"],
   "skills": [
     {
-      "id": "greet",
+      "id": "greetSkill",
       "name": "Greeting Skill",
       "description": "Responds with a friendly greeting."
     }
