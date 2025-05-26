@@ -7,12 +7,16 @@
     "url": "https://telex.im"
   },
   "version": "1.0.0",
+  "defaultInputModes": [
+        "application/json"
+    ],
+    "defaultOutputModes": [
+        "application/json"
+    ],
   "capabilities": {
     "streaming": false,
     "pushNotifications": false
   },
-  "defaultInputModes": ["application/json"],
-  "defaultOutputModes": ["application/json"],
   "skills": [
     {
       "id": "greetSkill",
