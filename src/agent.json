@@ -7,20 +7,20 @@
     "url": "https://telex.im"
   },
   "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
    "defaultInputModes": [
         "application/json"
     ],
     "defaultOutputModes": [
         "application/json"
     ],
-  "capabilities": {
-    "streaming": false,
-    "pushNotifications": false
-  },
   "skills": [
     {
-      "id": "greetSkill",
-      "name": "Greeting Skil",
+      "id": "greetingSkill",
+      "name": "Greeting Skill",
       "description": "Responds with a friendly greeting."
     }
   ]
